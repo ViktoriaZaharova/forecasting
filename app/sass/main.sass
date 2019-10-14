@@ -1,0 +1,1187 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #111111
+  opacity: 1
+
+*:-moz-placeholder
+  color: #111111
+  opacity: 1
+
+*::-moz-placeholder
+  color: #111111
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #111111
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #111111
+
+body input:required:valid,
+body textarea:required:valid
+  color: #111111
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background-color: #ffffff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+.yellow
+  color: $yellow
+
+h1
+  font-size: 42px
+  font-family: 'helveticaBL', sans-serif
+  letter-spacing: 1.05px
+  line-height: 52px
+  max-width: 635px
+
+h2
+  font-size: 32px
+  font-family: 'helveticaB', sans-serif
+  width: 100%
+  text-align: center
+  letter-spacing: 0.8px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+
+.btn-accent
+  background-color: $yellow
+  border-radius: 5px
+  font-size: 18px
+  letter-spacing: 0.43px
+  color: #110f10
+  font-family: 'segoeSB', sans-serif
+  width: 330px
+  height: 55px
+  &:hover
+    background: #dcc605
+
+
+.container
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  position: relative
+  padding: 0 15px
+  max-width: 1170px
+
+.header-top, .header-bottom
+  .container
+    align-items: center
+
+.header-top
+  background-color: #ffffff
+  padding: 19px 0 20px
+
+.header-bottom
+  background: #110f10
+  padding: 14px 0 15px
+  color: #fff
+  border-bottom: 1px solid rgba(#fff, .2)
+  .container
+    justify-content: space-between
+  .name
+    font-size: 14px
+    p
+      font-size: 18px
+      font-weight: 700
+
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  li
+    &:not(:last-child)
+      margin: 0 45px 0 0
+    a
+      color: #277bc9
+      text-transform: uppercase
+      &:hover
+        color: $yellow
+
+main
+  background: url("../img/bg1.png") #110f10 no-repeat center
+    size: cover
+  color: #fff
+  padding: 184px 0 143px
+  .container
+    flex-direction: column
+    align-items: flex-start
+  h6
+    font-size: 26px
+    font-family: 'helveticaR', sans-serif
+    max-width: 632px
+    letter-spacing: 0.65px
+    margin: 25px 0 0 0
+
+.phone
+  font-size: 22px
+  color: #fff
+
+.main-content
+  margin: 49px 0 0
+  border-radius: 10px
+  background-color: #242123
+  max-width: 636px
+  width: 100%
+  padding: 26px 0 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  h3
+    font-size: 26px
+    letter-spacing: 0.65px
+    text-align: center
+    margin: 13px 0 24px
+  p
+    font-family: 'segoeL', sans-serif
+  .bottom-line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 17px 30px 21px
+    border-top: 1px solid rgba(#fff, .3)
+
+.date-training
+  position: relative
+  padding: 0 0 0 22px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 5px
+    background: url("../img/clock.png") no-repeat center
+      size: contain
+    width: 13px
+    height: 34px
+  span
+    display: inline-block
+    font-family: 'segoeB', sans-serif
+
+
+//about-training
+.about-training
+  background-color: #110f10
+  position: relative
+  color: #fff
+  padding: 207px 0 133px
+  &:before
+    content: ''
+    left: 0
+    bottom: 0
+    background: url("../img/bg2.png") no-repeat center
+      size: contain
+    width: 856px
+    height: 470px
+    position: absolute
+  .text
+    width: 100%
+    max-width: 771px
+    margin: 0 0 0 auto
+    line-height: 30px
+    font-size: 18px
+  h2
+    text-align: left
+  h6
+    margin: 17px 0 42px
+    font-size: 24px
+    line-height: 30px
+    max-width: 650px
+  p
+    &:not(:last-child)
+      margin: 0 0 20px
+
+
+//result-training
+.result-training
+  margin: 80px 0 100px
+  h2
+    max-width: 775px
+    margin: 0 auto 31px
+    color: #110f10
+
+.result-training__content
+  width: 100%
+  background-color: #f8f8f8
+  padding: 60px 53px 56px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.result-training__box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  color: #110f10
+  max-width: 245px
+  width: 100%
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background-color: #1c191b
+    width: 100px
+    height: 100px
+  h3
+    font-size: 20px
+    font-family: 'segoeB', sans-serif
+    margin: 11px 0 18px
+  p
+    line-height: 24px
+
+
+.attention-purchase
+  overflow: hidden
+  margin: 0 0 148px
+  .container
+    background-color: #110f10
+    color: #fff
+    justify-content: space-between
+    max-width: 1140px
+    padding: 0
+    .image
+      position: absolute
+      right: 0
+      top: 0
+
+
+.attention-purchase__text
+  max-width: 745px
+  width: 100%
+  padding: 40px 0 0 0
+  h2
+    text-align: left
+    padding: 0 0 36px 55px
+    max-width: 670px
+    span
+      font-size: 48px
+      letter-spacing: 1.2px
+
+.attention-purchase__text-bottom
+  padding: 35px 53px
+  background: #2b272a
+
+
+//scope
+.scope
+  margin: 0 0 96px
+  h2
+    max-width: 720px
+    margin: 0 auto 32px
+    color: #303030
+  .container
+    flex-direction: column
+    align-items: center
+
+.scope-list
+  width: 100%
+  background-color: #2b272a
+  padding: 36px 100px 17px
+  color: #fff
+  font-size: 22px
+  text-transform: uppercase
+  font-family: 'segoeSB', sans-serif
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  li
+    width: 42%
+    display: flex
+    align-items: center
+    margin: 0 0 41px
+    .icon
+      margin: 0 18px 0 0
+      min-width: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+
+
+//result-training
+.result-training__two
+  background: #1c191b
+  padding: 81px 0 84px
+  color: #fff
+  .container
+    flex-direction: column
+    align-items: center
+  h2
+    margin: 0 auto 41px
+
+.result-training__two-box
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background-color: #2b272a
+  margin: 0 0 10px
+  padding: 26px 92px 26px 94px
+  .icon
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #1c191b
+    line-height: 26px
+    font-size: 18px
+  .text
+    width: calc(100% - 100px)
+    padding: 0 0 0 41px
+  h3
+    font-size: 20px
+    font-family: 'segoeB', sans-serif
+    margin: 0 0 18px
+    line-height: normal
+
+
+//structure
+.structure
+  margin: 81px 0
+  h2
+    color: $subtitle
+
+.structure__content
+  width: 100%
+  margin: 36px auto 0
+  border: 10px solid #f8f8f8
+  padding: 91px 95px 84px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.structure__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 24px
+  max-width: 195px
+  width: 100%
+  font-family: 'Open Sans', sans-serif
+  text-align: center
+  color: #292929
+  h3
+    margin: 15px auto 0
+
+//about
+.about
+  background-color: #110f10
+  padding: 87px 0 113px
+  color: #fff
+  h2
+    text-align: left
+    margin: 0 0 24px
+  .container
+    align-items: flex-start
+    justify-content: space-between
+
+.about-image
+  position: absolute
+  right: -74px
+  top: 0
+
+.about__text
+
+  width: 100%
+  position: relative
+  z-index: 1
+
+.panel
+  max-width: 677px
+  background-color: #232022
+  width: 100%
+  border-radius: 5px
+  margin: 0 0 9px
+
+.panel.open
+  box-shadow: 0 5px 4px rgba(53, 53, 51, 0.05)
+  background-color: #ffffff
+  .panel-title
+    color: #0c0c0c
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+    &:before
+      background: url("../img/arrow-top.png") no-repeat center
+        size: contain
+    .number
+      color: #d2d2d2
+      border-color: #d1d1d1
+  .panel-body
+    display: block
+
+
+.panel-title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 20px 50px 20px 21px
+
+  cursor: pointer
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 19px
+    height: 10px
+    right: 31px
+    top: 50%
+    transform: translate(0,-50%)
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url("../img/arrow-bottom.png") no-repeat center
+      size: contain
+    transition: .3s ease
+  h3
+    margin: 0 auto 0 21px
+    font-size: 20px
+    font-family: 'segoeSB', sans-serif
+  .number
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 15px
+    font-family: 'Open Sans', sans-serif
+    width: 30px
+    height: 30px
+    border: 1px solid #d1d1d1
+      radius: 50%
+
+.panel-body
+  display: none
+  padding: 0 77px 113px
+  color: #202020
+  font-family: 'Open Sans', sans-serif
+  line-height: 24px
+
+.about-number
+  max-width: 677px
+  margin: 77px 0 74px 0
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  width: 100%
+  li
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 185px
+    font-size: 18px
+    margin: 0 0 74px
+    p
+      font-size: 40px
+      font-family: 'segoeB', sans-serif
+      margin: 0 0 23px
+
+.medal
+  max-width: 687px
+  font-size: 26px
+  text-align: center
+  font-family: 'segoeB', sans-serif
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%,0)
+    width: 633px
+    height: 225px
+    background: url("../img/shadow.png") no-repeat center
+      size: contain
+  h4
+    margin: 0 auto 22px
+  img
+    margin: 0 auto
+
+
+//photo
+.photo
+  margin: 81px 0 79px
+  h2
+    color: #393333
+    margin: 0 auto 36px
+
+.photo__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.photo__box
+  width: 261px
+  height: 164px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+
+.load-more
+  margin: 13px auto 0
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #131313
+  font-family: 'Open Sans', sans-serif
+  &:hover
+    color: $yellow
+  .fa
+    margin: 0 0 0 11px
+
+.mass-media
+  background-color: #f4f4f4
+  padding: 82px 0 95px
+  h2
+    color: #393333
+    margin: 0 auto 32px
+
+.mass-media__content
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.mass-media__box
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 140px
+  height: 140px
+  background-color: #ffffff
+
+
+.instruction
+  padding: 79px 0
+  background-color: #f4f4f4
+
+.instruction__content
+  width: 100%
+  margin: 73px 0 0 0
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 0 0 43px
+  position: relative
+  .line-decor
+    position: absolute
+    bottom: 5px
+    left: 85px
+
+.instruction-list
+  width: 47%
+
+  li
+    position: relative
+    z-index: 1
+    width: 100%
+    margin: 0 0 49px
+    display: flex
+    align-items: center
+    color: #252525
+    font-size: 16px
+    font-family: 'Open Sans', sans-serif
+    h3
+      color: #252525
+      font-size: 20px
+      margin: 0 0 12px
+      font-family: 'segoeSB', sans-serif
+    .icon-wrapper
+      position: relative
+      .number
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        width: 35px
+        height: 35px
+        background-color: $yellow
+        top: 50%
+        left: -17px
+        transform: translate(0,-50%)
+        color: #111011
+        text-align: center
+        font-size: 20px
+        font-family: 'segoeSB', sans-serif
+        border-radius: 50%
+      .icon
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        width: 90px
+        height: 90px
+        border: 4px solid $yellow
+        background-color: #111011
+    .text
+      width: calc(100% - 90px)
+      padding: 0 0 0 21px
+
+
+.reviews
+  padding: 80px 0
+
+.reviews__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 42px 0
+
+.reviews__box
+  display: flex
+  flex-direction: column
+  margin: 0 0 47px
+  max-width: 325px
+  width: 100%
+  .text
+    font-size: 14px
+    line-height: 24px
+    color: #000
+  .author
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 30px 0 0 0
+  h4
+    font-size: 16px
+    color: #000000
+    margin: 0 auto 0 17px
+    font-family: 'segoeSB', sans-serif
+
+.reviews__content-video
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 41px 0
+  border:
+    top: 1px solid #dedede
+    bottom: 1px solid #dedede
+
+.reviews-video
+  width: 328px
+  height: 219px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #000000
+    opacity: .5
+    border-radius: 10px
+  .play
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    z-index: 2
+
+
+.price
+  padding: 80px 0
+  background: url("../img/shadow.png") no-repeat center #110f10
+    size: 623px
+  position: relative
+  .container
+    color: #fff
+    flex-direction: column
+    align-items: center
+  h6
+    margin: 20px auto 46px
+    text-align: center
+    font-size: 22px
+
+.price__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.price__box
+  border: 2px solid transparent
+  border-radius: 10px
+  background-color: #2b272a
+  width: 360px
+  padding: 42px 0 0
+  h3
+    margin: 13px auto 18px
+    font-size: 26px
+    text-align: center
+    font-family: 'segoeSB', sans-serif
+  h4
+    font-size: 20px
+    font-family: 'segoeL', sans-serif
+    text-align: center
+    margin: 0 0 26px
+  .plus
+    padding: 0 38px
+
+.list-star
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img:not(:last-child)
+    margin: 0 20px 0 0
+
+.list-dots
+  padding: 0 40px 0 38px
+  margin: 0 0 18px
+  li
+    position: relative
+    padding: 12px 0 12px 16px
+    font-size: 14px
+    font-family: 'Open Sans', sans-serif
+
+    border-bottom: 1px dashed rgba(#fff, .3)
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      border-radius: 50%
+      background-color: #ffffff
+      opacity: .3
+      width: 5px
+      height: 5px
+    &:last-child
+      border: none
+
+.price__box-bottom
+  background-color: #332f32
+  border-radius: 0 0 10px 10px
+  padding: 34px 40px
+  .btn
+    width: 100%
+    margin: 22px auto 0
+
+.price-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 18px
+
+.new-price
+  font-size: 26px
+  font-family: 'segoeB', sans-serif
+
+.old-price
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/line-price.png") no-repeat center
+      size: contain
+    top: 0
+    right: 0
+    width: 87px
+    height: 24px
+
+.price__box-active
+  border: 2px solid $yellow
+  box-sizing: border-box
+
+.plus
+  display: flex
+  align-items: center
+  font-family: 'Open Sans', sans-serif
+  span
+    font-size: 22px
+    margin: 0 9px 0 0
+
+.section-call
+  background-color: #272324
+  overflow: hidden
+  color: #fff
+  .phone
+    font-family: 'Open Sans', sans-serif
+  .container
+    flex-direction: column
+    align-items: flex-start
+  h2
+    text-align: left
+    margin: 118px 0 34px
+    max-width: 610px
+    position: relative
+    z-index: 1
+  .bottom-line
+    margin: 0 0 119px
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    .btn
+      width: 330px
+      margin: 0 31px 0 0
+  .image
+    position: absolute
+    right: -145px
+    bottom: 0
+
+
+footer
+  background-color: #171515
+  .name
+    font-size: 12px
+  p
+    font-family: 'segoeB', sans-serif
+    font-size: 15px
+  a
+    margin: 0 0 0 5px
+    color: #bebebe
+
+
+.footer-top, .footer-bottom
+  .container
+    align-items: center
+    justify-content: space-between
+    color: #fff
+
+.mail
+  color: #bdbdbd
+  font-size: 13px
+  font-family: 'segoeL', sans-serif
+
+
+.footer-top
+  border-bottom: 1px solid #3a3838
+
+.footer-mobile
+  display: none
+
+.footer-bottom
+  padding: 14px 0 16px
+  .item
+    font-size: 13px
+    color: #7c7c7c
+    font-family: 'segoeL', sans-serif
+    display: flex
+    align-items: center
+    p
+      font-size: 13px
+      font-family: 'segoeL', sans-serif
+
+
+.list-social
+  display: flex
+  align-items: center
+  li:not(:last-child)
+    margin: 0 10px 0 0
+
+.list-spectrum
+  display: flex
+  align-items: center
+  li:not(:last-child)
+    margin: 0 34px 0 0
+
+
+.footer-top
+  padding: 20px 0
+
+.doc-links
+  display: flex
+  align-items: center
+  font-size: 13px
+  a
+    color: #bdbdbd
+    &:not(:last-child)
+      margin: 0 14px 0 0
+
+
+
+.modal__div
+  position: fixed
+  width: 330px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__close
+    position: absolute
+    right: 15px
+    top: 17px
+    width: 12px
+    cursor: pointer
+  .modal__wrapper
+    background: #242123
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 52px 30px 34px
+    box-sizing: border-box
+    position: relative
+    h2
+      margin: 0 0 24px
+      font-family: 'helveticaBL', sans-serif
+      font-size: 26px
+      color: #ffffff
+      text-align: center
+      letter-spacing: 0.65px
+
+.form
+  flex-direction: column
+  align-items: flex-start
+  width: 100%
+  label
+    display: block
+    width: 100%
+    height: auto
+    margin: 0 0 10px
+    input
+      height: 45px
+      font-size: 14px
+      width: 100%
+      color: #9a8a8a
+      font-family: 'Open Sans', sans-serif
+      font-weight: 300
+      box-sizing: border-box
+      padding: 0 19px
+      background-color: #ffffff
+      border-radius: 5px
+      border: none
+      outline: none
+      &::placeholder
+        color: #9a8a8a
+  .btn-accent
+    margin: 0 auto 0
+    width: 100%
+    outline: none
+    border: none
+  .checkbox
+    margin: 28px 0 0 0
+
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 20px
+    height: 17px
+    display: inline-block
+    vertical-align: top
+    border: none
+      radius: 5px
+    background-color: $yellow
+    cursor: pointer
+    transition: .3s ease
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 11px
+      height: 9px
+      background: url("../img/check.png") no-repeat center
+        size: contain
+  .label
+    max-width: 221px
+    width: 100%
+    margin: 0 0 0 10px
+    display: inline-block
+    vertical-align: middle
+    color: #8b898a
+    cursor: pointer
+    font:
+      family: 'Open Sans', sans-serif
+      weight: 300
+      size: 11px
+    a
+      display: inline
+      color: #bbbbbb
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 4px
+      right: 0
+      bottom: 0
+      left: 0
+      margin: 0 auto
+      width: 13px
+      height: 9px
+      background: transparent
+
+.btn-mobile
+  margin: 0 0 0 auto
+  display: none
+  align-items: center
+  .toggle
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    width: 18px
+    height: 12px
+    margin: 0 10px 0 0
+    span
+      display: block
+      width: 100%
+      height: 2px
+      background: #000
+
+.navigation
+  margin: 0 auto
+
+.price__content-wrapper, .mass-media__content-wrapper
+  width: 100%
+
+.arrow-wrapper
+  width: 100%
+  margin: 48px 0 0 0
+  display: none
+  align-items: center
+  justify-content: center
+  .left-arrow, .right-arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #e2e2e2
+    width: 50px
+    height: 50px
+    background: url("../img/arrow-left.png") no-repeat center
+      size: 10px
+    margin: 0 3px
+    &:hover
+      border-color: $yellow
+      background: url("../img/arrow-right.png") $yellow no-repeat center
+  .right-arrow
+    transform: rotate(180deg)
+    &:hover
+      transform: rotate(0)
+  .left-arrow
+    &:hover
+      transform: rotate(180deg)
+
+
+
+
+@import "media"
+// Всегда в конце
